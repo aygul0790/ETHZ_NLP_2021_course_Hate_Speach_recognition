@@ -54,11 +54,13 @@ class NN(nn.Module):
         for layer in self.layers_nonFC:
             x = F.relu(layer(x))
             x = F.dropout(x, p=self.dropout_nonFC, training=self.training)
+            # potentially add the sigmoid for the BCELoss
         if self.n_layers_nonFC > 0:
             x = x.view(-1, self.input_dim*self.n_hidden_nonFC[-1])
         for layer in self.layers_FC:
             x = F.relu(layer(x))
             x = F.dropout(x, p=self.dropout_FC, training=self.training)
+            # potentially add the sigmoid for the BCELoss
         x = self.last_layer_FC(x)
         return x
 
