@@ -4,3 +4,6 @@ ETHZ NLP 2021 Project
 Link to our Overleaf Project Proposal
 
 https://www.overleaf.com/project/6060b843da1f420c663bf184
+
+
+https://colab.research.google.com/drive/1SygbUdj9EXMI4B6FGxhI2xu2mr2Za5Qv?hl=en#scrollTo=IVXXDStfCGQp
